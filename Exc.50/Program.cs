@@ -61,14 +61,16 @@ int SearchElem (int[,] Arr, int a, int b)
    
 }
 
-const int a = 0;
-const int b = 100;
+
 Console.WriteLine("Внесите размерность массива - количество строк");
 int m = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Внесите размерность массива - количество столбцов");
 int n = Convert.ToInt32(Console.ReadLine());
 
-int[,] arr = CreateArray(m, n, a, b);
+const int LEFT = 0;
+const int RIGHT= 100;
+
+int[,] arr = CreateArray(m, n, LEFT, RIGHT);
 
 Console.WriteLine();
 
